@@ -1,0 +1,16 @@
+diff --git a/node_modules/casual/src/casual.js b/node_modules/casual/src/casual.js
+index 9179af1..83b4328 100644
+--- a/node_modules/casual/src/casual.js
++++ b/node_modules/casual/src/casual.js
+@@ -1,10 +1,6 @@
+ var helpers = require('./helpers');
+-var exists = require('fs').existsSync;
+ 
+-var safe_require = function(filename) {
+-	if (exists(filename + '.js')) {
+-		return require(filename);
+-	}
++var safe_require = function() {
+ 	return {};
+ };
+ 

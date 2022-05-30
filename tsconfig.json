@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "outDir": "./dist",
+    "target": "es5", 
+    "lib": ["esnext", "dom"],
+    "allowJs": true, 
+    "skipLibCheck": true,
+    "esModuleInterop": true, 
+    "allowSyntheticDefaultImports": true, 
+    "strict": true,
+    "forceConsistentCasingInFileNames": true, 
+    "module": "CommonJS", 
+    "moduleResolution": "node", 
+    "resolveJsonModule": true, 
+    "sourceMap": true,
+    "noUnusedLocals": true, 
+    "noUnusedParameters": true,
+    "incremental": true, 
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "downlevelIteration": true,
+    "strictPropertyInitialization": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "$/*": ["data/*"]
+    }
+  },
+  "include": ["src/**/*", "types.ts"],
+  "exclude": ["node_modules", "build", ".eslintrc.js"]
+}

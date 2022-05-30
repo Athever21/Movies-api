@@ -1,0 +1,6 @@
+{
+  "verbose": false,
+  "watch": ["./src/**/*"],
+  "exec": "webpack --mode=development && node ./dist/server.js",
+  "ext": "js, ts"
+}
